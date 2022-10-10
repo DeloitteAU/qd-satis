@@ -871,6 +871,54 @@
                     "proprietary"
                 ],
                 "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development."
+            },
+            "dev-develop": {
+                "name": "deloittedigital/drupal-dev-tools",
+                "version": "dev-develop",
+                "version_normalized": "dev-develop",
+                "source": {
+                    "type": "git",
+                    "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
+                    "reference": "e346a3f50f0e69edf72844050d7ed5e43d19b009"
+                },
+                "require": {
+                    "drupal/core-composer-scaffold": "^9.4"
+                },
+                "require-dev": {
+                    "behat/mink": "^1.10",
+                    "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                    "drupal/coder": "^8.3",
+                    "mglaman/drupal-check": "^1.4",
+                    "phpcompatibility/php-compatibility": "^9.3",
+                    "phpspec/prophecy-phpunit": "^2.0",
+                    "phpunit/phpunit": "^9",
+                    "squizlabs/php_codesniffer": "@stable",
+                    "symfony/phpunit-bridge": "^6.1",
+                    "zaporylie/composer-drupal-optimizations": "^1.2"
+                },
+                "time": "2022-10-10T06:06:38+00:00",
+                "type": "drupal-drush",
+                "extra": {
+                    "drupal-scaffold": {
+                        "file-mapping": {
+                            "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
+                            "[web-root]/sites/development.services.yml": {
+                                "mode": "replace",
+                                "path": "assets/development.services.yml",
+                                "overwrite": false
+                            },
+                            "[web-root]/sites/default/settings.php": {
+                                "mode": "replace",
+                                "path": "assets/initial.settings.php",
+                                "overwrite": false
+                            }
+                        }
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development."
             }
         },
         "deloittedigital/drupal-project": {
