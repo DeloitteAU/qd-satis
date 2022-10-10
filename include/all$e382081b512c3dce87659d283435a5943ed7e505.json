@@ -703,14 +703,14 @@
                 ],
                 "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development."
             },
-            "dev-master": {
+            "v1.0.1": {
                 "name": "deloittedigital/drupal-dev-tools",
-                "version": "dev-master",
-                "version_normalized": "9999999-dev",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "4936281657659cd68c90a4752c558c55a0694708"
+                    "reference": "3bcd81758608534ca182ce21f4fe97d6be9b0498"
                 },
                 "require": {
                     "behat/mink": "^1.10",
@@ -724,8 +724,36 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-07T06:50:03+00:00",
-                "type": "library",
+                "time": "2022-10-10T03:51:19+00:00",
+                "type": "drupal-library",
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development."
+            },
+            "dev-master": {
+                "name": "deloittedigital/drupal-dev-tools",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
+                    "reference": "3bcd81758608534ca182ce21f4fe97d6be9b0498"
+                },
+                "require": {
+                    "behat/mink": "^1.10",
+                    "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                    "drupal/coder": "^8.3",
+                    "mglaman/drupal-check": "^1.4",
+                    "phpcompatibility/php-compatibility": "^9.3",
+                    "phpspec/prophecy-phpunit": "^2.0",
+                    "phpunit/phpunit": "^9",
+                    "squizlabs/php_codesniffer": "@stable",
+                    "symfony/phpunit-bridge": "^6.1",
+                    "zaporylie/composer-drupal-optimizations": "^1.2"
+                },
+                "time": "2022-10-10T03:51:19+00:00",
+                "type": "drupal-library",
                 "license": [
                     "proprietary"
                 ],
