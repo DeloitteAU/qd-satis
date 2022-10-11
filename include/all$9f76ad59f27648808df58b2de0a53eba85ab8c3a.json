@@ -879,7 +879,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "06572f48c734100e49a98fc4ec3e28527d8a9781"
+                    "reference": "508cca48257a1fd00d11acf763d1e22184e4676a"
                 },
                 "require": {
                     "behat/mink": "^1.10",
@@ -894,7 +894,7 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-11T06:40:49+00:00",
+                "time": "2022-10-11T08:25:22+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
@@ -932,7 +932,7 @@
                             "./.stylelintrc.json": ".stylelintrc.json",
                             "./package.json": "package.json",
                             "./phpcs.xml.dist": "phpcs.xml.dist",
-                            "./pphpunit.xml.dist": "phpunit.xml.dist"
+                            "./phpunit.xml.dist": "phpunit.xml.dist"
                         }
                     }
                 },
