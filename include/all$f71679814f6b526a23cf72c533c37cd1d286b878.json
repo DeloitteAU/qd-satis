@@ -879,7 +879,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "1befd8aa95a38c2091b2cedc35490c698fb6db21"
+                    "reference": "2a841dfeaee6dc05845487fc10c80c2fb039749e"
                 },
                 "require": {
                     "drupal/core-composer-scaffold": "^9.4"
@@ -896,14 +896,12 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-11T02:33:24+00:00",
+                "time": "2022-10-11T02:48:15+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
                         "file-mapping": {
                             "./.husky/pre-commit": ".husky/pre-commit",
-                            "./.husky/_/.gitignore": ".husky/_/.gitignore",
-                            "./.husky/_/husky.sh": ".husky/_/husky.sh",
                             "./.vscode/.launch.json": ".vscode/.launch.json",
                             "./.vscode/php.ini": ".vscode/php.ini",
                             "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
