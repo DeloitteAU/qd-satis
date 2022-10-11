@@ -879,7 +879,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "e346a3f50f0e69edf72844050d7ed5e43d19b009"
+                    "reference": "9bef332ce2cdfa156a7b06e01cb83da4eb4ac7ba"
                 },
                 "require": {
                     "drupal/core-composer-scaffold": "^9.4"
@@ -896,11 +896,13 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-10T06:06:38+00:00",
+                "time": "2022-10-11T01:32:41+00:00",
                 "type": "drupal-drush",
                 "extra": {
                     "drupal-scaffold": {
                         "file-mapping": {
+                            "./package.json": "assets/package.json",
+                            "./.lintstagedrc.yml": ".lintstagedrc.yml",
                             "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
                             "[web-root]/sites/development.services.yml": {
                                 "mode": "replace",
