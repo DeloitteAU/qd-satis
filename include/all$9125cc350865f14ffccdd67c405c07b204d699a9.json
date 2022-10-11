@@ -879,7 +879,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "ba618c06ef50570452a9a9430eb5bfca2b5b9ca4"
+                    "reference": "1befd8aa95a38c2091b2cedc35490c698fb6db21"
                 },
                 "require": {
                     "drupal/core-composer-scaffold": "^9.4"
@@ -896,13 +896,16 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-11T01:47:38+00:00",
+                "time": "2022-10-11T02:33:24+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
                         "file-mapping": {
-                            "./package.json": "package.json",
-                            "./.lintstagedrc.yml": ".lintstagedrc.yml",
+                            "./.husky/pre-commit": ".husky/pre-commit",
+                            "./.husky/_/.gitignore": ".husky/_/.gitignore",
+                            "./.husky/_/husky.sh": ".husky/_/husky.sh",
+                            "./.vscode/.launch.json": ".vscode/.launch.json",
+                            "./.vscode/php.ini": ".vscode/php.ini",
                             "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
                             "[web-root]/sites/development.services.yml": {
                                 "mode": "replace",
@@ -913,7 +916,27 @@
                                 "mode": "replace",
                                 "path": "assets/initial.settings.php",
                                 "overwrite": false
-                            }
+                            },
+                            "./scripts/composer/ScriptHandler.php": "scripts/composer/ScriptHandler.php",
+                            "./scripts/test-behat-selenium": "scripts/test-behat-selenium",
+                            "./scripts/test-code-drupal": "scripts/test-code-drupal",
+                            "./scripts/test-code-js": "scripts/test-code-js",
+                            "./scripts/test-code-php": "scripts/test-code-php",
+                            "./scripts/test-code-styles": "scripts/test-code-styles",
+                            "./scripts/test-code-styles-junit": "scripts/test-code-styles-junit",
+                            "./.editorconfig": {
+                                "mode": "replace",
+                                "path": ".editorconfig",
+                                "overwrite": false
+                            },
+                            "./.eslintignore": ".eslintignore",
+                            "./.eslintrc.json": ".eslintrc.json",
+                            "./.lintstagedrc.yml": ".lintstagedrc.yml",
+                            "./.stylelintignore": ".stylelintignore",
+                            "./.stylelintrc.json": ".stylelintrc.json",
+                            "./package.json": "package.json",
+                            "./phpcs.xml.dist": "phpcs.xml.dist",
+                            "./pphpunit.xml.dist": "phpunit.xml.dist"
                         }
                     }
                 },
