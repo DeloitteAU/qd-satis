@@ -915,12 +915,13 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "6cc253e8f1883bfad883ee9331f595d4d5a43c99"
+                    "reference": "038ce294a70764938112805ababcffe5d5223609"
                 },
                 "require": {
                     "behat/mink": "^1.10",
                     "dealerdirect/phpcodesniffer-composer-installer": "@stable",
                     "drupal/coder": "^8.3",
+                    "drupal/core-composer-scaffold": "^9.4",
                     "mglaman/drupal-check": "^1.4",
                     "phpcompatibility/php-compatibility": "^9.3",
                     "phpspec/prophecy-phpunit": "^2.0",
@@ -929,12 +930,47 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-10T05:27:06+00:00",
+                "time": "2022-10-12T04:01:05+00:00",
                 "type": "library",
-                "scripts": {
-                    "post-install-cmd": [
-                        "mv -R vendor/deloittedigital/drupal-dev-tools/devtools/*.* ./"
-                    ]
+                "extra": {
+                    "drupal-scaffold": {
+                        "file-mapping": {
+                            "./.husky/pre-commit": ".husky/pre-commit",
+                            "./.vscode/launch.json": ".vscode/launch.json",
+                            "./.vscode/php.ini": ".vscode/php.ini",
+                            "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
+                            "[web-root]/sites/development.services.yml": {
+                                "mode": "replace",
+                                "path": "assets/development.services.yml",
+                                "overwrite": false
+                            },
+                            "[web-root]/sites/default/settings.php": {
+                                "mode": "replace",
+                                "path": "assets/initial.settings.php",
+                                "overwrite": false
+                            },
+                            "./scripts/composer/ScriptHandler.php": "scripts/composer/ScriptHandler.php",
+                            "./scripts/test-behat-selenium": "scripts/test-behat-selenium",
+                            "./scripts/test-code-drupal": "scripts/test-code-drupal",
+                            "./scripts/test-code-js": "scripts/test-code-js",
+                            "./scripts/test-code-php": "scripts/test-code-php",
+                            "./scripts/test-code-styles": "scripts/test-code-styles",
+                            "./scripts/test-code-styles-junit": "scripts/test-code-styles-junit",
+                            "./.editorconfig": {
+                                "mode": "replace",
+                                "path": ".editorconfig",
+                                "overwrite": false
+                            },
+                            "./.eslintignore": ".eslintignore",
+                            "./.eslintrc.json": ".eslintrc.json",
+                            "./.lintstagedrc.yml": ".lintstagedrc.yml",
+                            "./.stylelintignore": ".stylelintignore",
+                            "./.stylelintrc.json": ".stylelintrc.json",
+                            "./package.json": "package.json",
+                            "./phpcs.xml.dist": "phpcs.xml.dist",
+                            "./phpunit.xml.dist": "phpunit.xml.dist"
+                        }
+                    }
                 },
                 "license": [
                     "proprietary"
