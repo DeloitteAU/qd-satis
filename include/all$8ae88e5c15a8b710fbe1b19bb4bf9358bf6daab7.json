@@ -984,7 +984,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "2a588484b1891b9136df469160127cea2e0ea56b"
+                    "reference": "3788cbe16ff4c50d8fc0d50b8fae9158a64efec6"
                 },
                 "require": {
                     "drupal/core-composer-scaffold": "*"
@@ -1001,7 +1001,7 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-18T04:10:33+00:00",
+                "time": "2022-10-18T04:14:52+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
@@ -1020,7 +1020,6 @@
                                 "path": "assets/initial.settings.php",
                                 "overwrite": false
                             },
-                            "./scripts/composer/ScriptHandler.php": "scripts/composer/ScriptHandler.php",
                             "./scripts/test-behat-selenium": "scripts/test-behat-selenium",
                             "./scripts/test-code-drupal": "scripts/test-code-drupal",
                             "./scripts/test-code-js": "scripts/test-code-js",
