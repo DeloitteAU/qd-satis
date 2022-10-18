@@ -984,7 +984,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "42f7ef608d06ac85ca001b5b1ed9e3a7de0516d7"
+                    "reference": "121309222f6474c845ccf9446779d7a1a25d9b3b"
                 },
                 "require": {
                     "behat/mink": "^1.10",
@@ -999,7 +999,7 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-18T22:52:26+00:00",
+                "time": "2022-10-18T23:11:24+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
@@ -1015,9 +1015,19 @@
                                 "path": "assets/initial.settings.php",
                                 "overwrite": false
                             },
-                            "./.husky/pre-commit": ".husky/pre-commit",
-                            "./.vscode/launch.json": ".vscode/launch.json",
-                            "./.vscode/php.ini": ".vscode/php.ini"
+                            "./.editorconfig": {
+                                "mode": "replace",
+                                "path": ".editorconfig",
+                                "overwrite": false
+                            },
+                            "./.eslintignore": ".eslintignore",
+                            "./.eslintrc.json": ".eslintrc.json",
+                            "./.lintstagedrc.yml": ".lintstagedrc.yml",
+                            "./.stylelintignore": ".stylelintignore",
+                            "./.stylelintrc.json": ".stylelintrc.json",
+                            "./package.json": "package.json",
+                            "./phpcs.xml.dist": "phpcs.xml.dist",
+                            "./phpunit.xml.dist": "phpunit.xml.dist"
                         }
                     }
                 },
