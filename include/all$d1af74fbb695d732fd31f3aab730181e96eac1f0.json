@@ -984,15 +984,13 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "3788cbe16ff4c50d8fc0d50b8fae9158a64efec6"
+                    "reference": "38265d5b189e449bd8c57dd12b1828d7a4e9673b"
                 },
                 "require": {
-                    "drupal/core-composer-scaffold": "*"
-                },
-                "require-dev": {
                     "behat/mink": "^1.10",
                     "dealerdirect/phpcodesniffer-composer-installer": "@stable",
                     "drupal/coder": "^8.3",
+                    "drupal/core-composer-scaffold": "*",
                     "mglaman/drupal-check": "^1.4",
                     "phpcompatibility/php-compatibility": "^9.3",
                     "phpspec/prophecy-phpunit": "^2.0",
@@ -1001,7 +999,7 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-18T04:14:52+00:00",
+                "time": "2022-10-18T04:25:49+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
