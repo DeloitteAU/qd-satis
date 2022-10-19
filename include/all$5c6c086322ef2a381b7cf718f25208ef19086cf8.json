@@ -984,7 +984,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "121309222f6474c845ccf9446779d7a1a25d9b3b"
+                    "reference": "a2d67b0bd21193d56b2f086c249c3a6a1cdb0b6a"
                 },
                 "require": {
                     "behat/mink": "^1.10",
@@ -999,7 +999,7 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-18T23:11:24+00:00",
+                "time": "2022-10-19T00:19:52+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
@@ -1027,7 +1027,16 @@
                             "./.stylelintrc.json": ".stylelintrc.json",
                             "./package.json": "package.json",
                             "./phpcs.xml.dist": "phpcs.xml.dist",
-                            "./phpunit.xml.dist": "phpunit.xml.dist"
+                            "./phpunit.xml.dist": "phpunit.xml.dist",
+                            "./.husky/pre-commit": ".husky/pre-commit",
+                            "./.vscode/launch.json": ".vscode/launch.json",
+                            "./.vscode/php.ini": ".vscode/php.ini",
+                            "./scripts/test-behat-selenium": "scripts/test-behat-selenium",
+                            "./scripts/test-code-drupal": "scripts/test-code-drupal",
+                            "./scripts/test-code-js": "scripts/test-code-js",
+                            "./scripts/test-code-php": "scripts/test-code-php",
+                            "./scripts/test-code-styles": "scripts/test-code-styles",
+                            "./scripts/test-code-styles-junit": "scripts/test-code-styles-junit"
                         }
                     }
                 },
