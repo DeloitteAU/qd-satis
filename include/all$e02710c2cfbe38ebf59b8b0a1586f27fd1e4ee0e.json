@@ -908,6 +908,65 @@
                 ],
                 "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development."
             },
+            "v1.0.7": {
+                "name": "deloittedigital/drupal-dev-tools",
+                "version": "v1.0.7",
+                "version_normalized": "1.0.7.0",
+                "source": {
+                    "type": "git",
+                    "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
+                    "reference": "efdcb1c7baa7589264ce9cf77e94d2bbd96b647a"
+                },
+                "require": {
+                    "behat/mink": "^1.10",
+                    "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                    "drupal/coder": "^8.3",
+                    "drupal/core-composer-scaffold": "*",
+                    "mglaman/drupal-check": "^1.4",
+                    "phpcompatibility/php-compatibility": "^9.3",
+                    "phpspec/prophecy-phpunit": "^2.0",
+                    "phpunit/phpunit": "^9",
+                    "squizlabs/php_codesniffer": "@stable",
+                    "symfony/phpunit-bridge": "^6.1",
+                    "zaporylie/composer-drupal-optimizations": "^1.2"
+                },
+                "time": "2022-10-19T04:14:32+00:00",
+                "type": "library",
+                "extra": {
+                    "drupal-scaffold": {
+                        "file-mapping": {
+                            "[web-root]/sites/default/settings.development.php": "assets/settings.development.php",
+                            "[web-root]/sites/development.services.yml": {
+                                "mode": "replace",
+                                "path": "assets/development.services.yml",
+                                "overwrite": false
+                            },
+                            "[web-root]/sites/default/settings.php": {
+                                "mode": "replace",
+                                "path": "assets/initial.settings.php",
+                                "overwrite": false
+                            },
+                            "./.editorconfig": {
+                                "mode": "replace",
+                                "path": ".editorconfig",
+                                "overwrite": false
+                            },
+                            "./.eslintignore": ".eslintignore",
+                            "./.eslintrc.json": ".eslintrc.json",
+                            "./.lintstagedrc.yml": ".lintstagedrc.yml",
+                            "./.stylelintignore": ".stylelintignore",
+                            "./.stylelintrc.json": ".stylelintrc.json",
+                            "./package.json": "package.json",
+                            "./phpcs.xml.dist": "phpcs.xml.dist",
+                            "./phpunit.xml.dist": "phpunit.xml.dist"
+                        }
+                    }
+                },
+                "license": [
+                    "proprietary"
+                ],
+                "description": "Assets for running linters, pre-commit hooks, xdebug and unit testing during Drupal site development."
+            },
             "dev-master": {
                 "name": "deloittedigital/drupal-dev-tools",
                 "version": "dev-master",
@@ -984,7 +1043,7 @@
                 "source": {
                     "type": "git",
                     "url": "ssh://git@dvcs.deloittedigital.com.au:22/dru/drupal-dev-tools.git",
-                    "reference": "f0d86a80e1b0be80c15df39cde644b41407f49d3"
+                    "reference": "efdcb1c7baa7589264ce9cf77e94d2bbd96b647a"
                 },
                 "require": {
                     "behat/mink": "^1.10",
@@ -999,7 +1058,7 @@
                     "symfony/phpunit-bridge": "^6.1",
                     "zaporylie/composer-drupal-optimizations": "^1.2"
                 },
-                "time": "2022-10-19T03:24:00+00:00",
+                "time": "2022-10-19T04:14:32+00:00",
                 "type": "library",
                 "extra": {
                     "drupal-scaffold": {
